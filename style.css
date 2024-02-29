@@ -7,13 +7,12 @@ body {
 
 .contenedor {
   display: flex;
-  padding: 0;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgb(111, 40, 217);
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(111, 40, 217);
 }
 
 .columna1,
@@ -22,6 +21,10 @@ body {
   padding: 10px;
   margin: 10px;
   box-sizing: border-box;
+}
+
+.columna1 h4 {
+  font-size: 1.5rem; /* Tamaño de fuente responsive */
 }
 
 h1 {
@@ -72,4 +75,10 @@ button:active {
 .input-area {
   margin: 10px;
   border-radius: 10px;
+}
+/* Media query para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  .contenedor {
+    padding: 1%; /* Ajuste adicional para pantallas pequeñas */
+  }
 }
