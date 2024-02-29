@@ -1,7 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  background-color: rgb(111, 40, 217);
+  background: linear-gradient(to right, #ffcc66, #ff6666 50%, #66cccc); 
   padding: 2%; /* Ajustado para ser más flexible */
 }
 
