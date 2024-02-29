@@ -1,14 +1,26 @@
 const button = document.getElementById("guess-button");
-
 const input = document.getElementById("guess-input");
-const valor = input.value;
-
 
 let intentos = 6;
-let diccionario = ['APPLE', 'HURLS', 'WINGS', 'YOUTH']
-const palabra = diccionario[Math.floor(Math.random() * diccionario.length)];
+let palabra;
 
+// Modificado para obtener una palabra de 5 letras de la API al cargar la página
+window.onload = function() {
+  obtenerPalabraDeAPI();
+};
 
+function obtenerPalabraDeAPI() {
+  fetch("https://random-word-api.herokuapp.com/word?length=5")
+    .then(response => response.json())
+    .then(data => {
+      palabra = data[0].toUpperCase();
+      console.log("Palabra seleccionada: ", palabra); 
+    .catch(error => {
+      console.error("Error al obtener la palabra:", error);
+      // En caso de error, puedes elegir una palabra del diccionario como respaldo
+      // palabra = diccionario[Math.floor(Math.random() * diccionario.length)];
+    });
+}
 
 button.addEventListener("click", intentar);
 
@@ -34,13 +46,13 @@ function intentar(){
         SPAN.className = 'letter';
         if (INTENTO[i]===palabra[i]){ //VERDE
             SPAN.innerHTML = INTENTO[i];
-            SPAN.style.backgroundColor = '#79b851';
+            SPAN.style.backgroundColor = '#99FF33';
         } else if( palabra.includes(INTENTO[i]) ) { //AMARILLO
             SPAN.innerHTML = INTENTO[i];
-            SPAN.style.backgroundColor = '#f3c237';
+            SPAN.style.backgroundColor = '#FFFF66 ';
         } else {      //GRIS
             SPAN.innerHTML = INTENTO[i];
-            SPAN.style.backgroundColor = '#a4aec4';
+            SPAN.style.backgroundColor = '#ECEFF1';
         }
         ROW.appendChild(SPAN)
     }
@@ -88,3 +100,4 @@ function terminar(mensaje){
     let contenedor = document.getElementById('guesses');
     contenedor.innerHTML = mensaje;
 }
+
