@@ -1,6 +1,7 @@
 #Wordle PPY
 
 #Descripción
+
 Wordle PPY es un juego interactivo inspirado en el popular juego de adivinar palabras, Wordle. Esta versión está diseñada para ofrecer entretenimiento, desafíos mentales y una oportunidad para mejorar el vocabulario y las habilidades de razonamiento lógico de los jugadores. Cada día, los jugadores tienen seis intentos para adivinar una palabra oculta, recibiendo pistas basadas en la precisión de sus suposiciones.
 
 #Características
