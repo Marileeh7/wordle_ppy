@@ -82,7 +82,4 @@ button:active {
   body {
     background-color: lightblue;
   }
-.contenedor {
-  display: flex;
-  flex-direction: column;
 }
