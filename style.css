@@ -1,7 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  background: linear-gradient(to right, #ffcc66, #ff6666 50%, #66cccc); 
+  background-image: linear-gradient(to right, #a953d3, #eb308d, #72a1a1);
   padding: 2%; /* Ajustado para ser más flexible */
 }
 
@@ -12,35 +12,37 @@ body {
   flex-wrap: wrap;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgb(111, 40, 217);
+  box-shadow: 0 0 10px rgb(115, 171, 179);
 }
 
 .columna1,
 .columna2 {
-  flex: 1; /* Distribución más equitativa */
-  padding: 10px;
+  flex: 1; 
+  padding: 35
+  px;
   margin: 10px;
   box-sizing: border-box;
 }
 
 .columna1 h4 {
-  font-size: 1.5rem; /* Tamaño de fuente responsive */
+  font-size: 1.5rem; 
 }
 
 h1 {
   text-align: center;
-  margin-top: 2%; /* Ajustado para ser más flexible */
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(111, 40, 217, 0.5); /* Sombra de texto más sutil */
+  margin-top: 10%; 
+  color: #fefefe;
+  text-shadow: 4px 5px 4px rgb(84, 199, 195); 
 }
 
 #guess-input {
   display: block;
+  font-family: 'Montserrat', sans-serif;
   margin: 0 auto 20px;
   padding: 10px;
   font-size: 18px;
-  width: 100%; /* Ancho flexible */
-  border: 1px solid #ccc;
+  width: 100%; 
+  border-radius: 10px;
 }
 
 #guess-button {
@@ -48,9 +50,10 @@ h1 {
   margin: 0 auto;
   padding: 10px 20px;
   font-size: 18px;
-  background-color: rgb(111, 40, 217);
+  background-image: linear-gradient(to right, #d8a2f3, #e27aae, #97c4c4);
   color: #fdfcfc;
   border: none;
+  font-family: 'Montserrat', sans-serif;
   border-radius: 10px;
 }
 
@@ -59,7 +62,7 @@ button:active {
 }
 
 .letter {
-  border: 1px solid #ccc; /* Borde más sutil */
+  border: 1px solid #ccc; 
   border-radius: 10px;
   padding: 6px;
   margin: 6px;
