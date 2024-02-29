@@ -37,12 +37,12 @@ function intentar() {
         return;
     }
     if (INTENTO === palabra) {
-        terminar("<h1>¡GANASTE!😀</h1>");
+        terminar("<h2>¡GANASTE!😀</h2>");
     } else {
         actualizarGrid(INTENTO);
         intentos--;
         if (intentos == 0) {
-            terminar(`<h1>¡PERDISTE! La palabra correcta era: ${palabra} 😖</h1>`);
+            terminar(`<h2>¡PERDISTE! La palabra correcta era: ${palabra} 😖</h2>`);
         }
     }
     input.value = ''; // Limpiar el input después de cada intento
