@@ -2,6 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
   text-align: center;
    background-color: rgb(111, 40, 217) ; padding: 100PX ; 
+      font-size: 1.6em;
   
 }
 .contenedor {
@@ -13,6 +14,8 @@ body {
     justify-content: center; 
     align-items: center; 
     flex-wrap: wrap; 
+    display: flex;
+  flex-direction: column;
   }
   
   .columna1,
@@ -75,3 +78,7 @@ button:active {
   margin: 10px;
   border-radius: 10px;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
