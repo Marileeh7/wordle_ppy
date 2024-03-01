@@ -90,9 +90,9 @@ button:active {
 /* Media query para pantallas pequeñas */
 @media only screen and (max-width: 600px) {
   .contenedor {
-    .contenedor {
     width: 100%;
-    padding: 1%; /* Ajuste adicional para pantallas pequeñas */
+    padding: 1%;
+    align-items: normal;
   }
   }
   #guess-input {
