@@ -41,7 +41,7 @@ h2{
   margin-top: 10%; 
   color: #a953d3;
   font-family: 'Montserrat', sans-serif;
-  text-shadow: 4px 5px 4px rgb(84, 199, 195); 
+  //*text-shadow: 4px 5px 4px rgb(84, 199, 195);*//
 }
 #guess-input {
   display: block;
