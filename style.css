@@ -7,12 +7,14 @@ body {
 
 .contenedor {
   display: flex;
+  width: 70%;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(115, 171, 179);
+  margin: 0 auto;
 }
 
 .columna1,
@@ -46,7 +48,7 @@ h2{
   margin: 0 auto 20px;
   padding: 10px;
   font-size: 18px;
-  width: 100%; 
+  width: 50%; 
   border-radius: 10px;
 }
 
@@ -88,5 +90,8 @@ button:active {
 @media only screen and (max-width: 600px) {
   .contenedor {
     padding: 1%; /* Ajuste adicional para pantallas pequeñas */
+  }
+  #guess-input {
+    width: 100%; 
   }
 }
