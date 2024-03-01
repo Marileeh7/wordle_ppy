@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', obtenerPalabraDeAPI);
 const button = document.getElementById("guess-button");
 const input = document.getElementById("guess-input");
 
+const aciertoSound = new Audio('win.mp3'); 
+const errorSound = new Audio('lose.mp3'); 
+
 let intentos = 6;
 let palabra = ''; // La palabra seleccionada de la API
 
@@ -38,11 +41,13 @@ function intentar() {
     }
     if (INTENTO === palabra) {
         terminar("<h2>¡GANASTE!😀</h2>");
+        aciertoSound.play();
     } else {
         actualizarGrid(INTENTO);
         intentos--;
         if (intentos == 0) {
             terminar(`<h2>¡PERDISTE! La palabra correcta era: ${palabra} 😖</h2>`);
+            errorSound.play();
         }
     }
     input.value = ''; // Limpiar el input después de cada intento
