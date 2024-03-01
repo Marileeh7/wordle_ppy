@@ -18,7 +18,7 @@ input.addEventListener('keypress', function (event) {
 });
 
 function obtenerPalabraDeAPI() {
-    fetch('https://random-word-api.herokuapp.com/word?lang=es') // Solicita 10 palabras
+    fetch('https://random-word-api.herokuapp.com/word?length=5&lang=es') // Solicita 10 palabras
         .then(response => response.json())
         .then(data => {
             const palabraCincoLetras = data.find(p => p.length === 5); // Encuentra la primera palabra de 5 letras
